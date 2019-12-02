@@ -43,6 +43,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtResource = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.txtOutput = new System.Windows.Forms.TextBox();
             this.tblMaster.SuspendLayout();
             this.grpMessage.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -57,25 +58,26 @@
             this.tblMaster.Controls.Add(this.cmdSend, 1, 2);
             this.tblMaster.Controls.Add(this.grpMessage, 0, 1);
             this.tblMaster.Controls.Add(this.groupBox2, 0, 0);
+            this.tblMaster.Controls.Add(this.txtOutput, 0, 3);
             this.tblMaster.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblMaster.Location = new System.Drawing.Point(0, 0);
             this.tblMaster.Margin = new System.Windows.Forms.Padding(2);
             this.tblMaster.Name = "tblMaster";
             this.tblMaster.RowCount = 4;
             this.tblMaster.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 162F));
-            this.tblMaster.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblMaster.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tblMaster.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
-            this.tblMaster.Size = new System.Drawing.Size(406, 451);
+            this.tblMaster.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tblMaster.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.tblMaster.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tblMaster.Size = new System.Drawing.Size(406, 533);
             this.tblMaster.TabIndex = 5;
             // 
             // cmdSend
             // 
             this.cmdSend.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cmdSend.Location = new System.Drawing.Point(318, 397);
+            this.cmdSend.Location = new System.Drawing.Point(318, 369);
             this.cmdSend.Margin = new System.Windows.Forms.Padding(2);
             this.cmdSend.Name = "cmdSend";
-            this.cmdSend.Size = new System.Drawing.Size(86, 28);
+            this.cmdSend.Size = new System.Drawing.Size(86, 24);
             this.cmdSend.TabIndex = 7;
             this.cmdSend.Text = "Send Trap";
             this.cmdSend.UseVisualStyleBackColor = true;
@@ -90,7 +92,7 @@
             this.grpMessage.Margin = new System.Windows.Forms.Padding(2);
             this.grpMessage.Name = "grpMessage";
             this.grpMessage.Padding = new System.Windows.Forms.Padding(2);
-            this.grpMessage.Size = new System.Drawing.Size(402, 229);
+            this.grpMessage.Size = new System.Drawing.Size(402, 201);
             this.grpMessage.TabIndex = 6;
             this.grpMessage.TabStop = false;
             this.grpMessage.Text = "SNMP Message";
@@ -102,7 +104,7 @@
             this.txtMessage.Margin = new System.Windows.Forms.Padding(2);
             this.txtMessage.Multiline = true;
             this.txtMessage.Name = "txtMessage";
-            this.txtMessage.Size = new System.Drawing.Size(398, 212);
+            this.txtMessage.Size = new System.Drawing.Size(398, 184);
             this.txtMessage.TabIndex = 5;
             // 
             // groupBox2
@@ -217,7 +219,7 @@
             this.txtResource.Name = "txtResource";
             this.txtResource.Size = new System.Drawing.Size(225, 20);
             this.txtResource.TabIndex = 4;
-            this.txtResource.Text = "MySQL Server@rahman-hp";
+            this.txtResource.Text = "MySQL Server@192-168-1-45";
             this.txtResource.TextChanged += new System.EventHandler(this.txtResource_TextChanged);
             // 
             // label4
@@ -231,11 +233,22 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "Resource";
             // 
+            // txtOutput
+            // 
+            this.tblMaster.SetColumnSpan(this.txtOutput, 2);
+            this.txtOutput.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtOutput.Location = new System.Drawing.Point(3, 398);
+            this.txtOutput.Multiline = true;
+            this.txtOutput.Name = "txtOutput";
+            this.txtOutput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtOutput.Size = new System.Drawing.Size(400, 132);
+            this.txtOutput.TabIndex = 8;
+            // 
             // SNMPTrapSenderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(406, 451);
+            this.ClientSize = new System.Drawing.Size(406, 533);
             this.Controls.Add(this.tblMaster);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -243,6 +256,7 @@
             this.Text = "Rahman SNMP Trap Sender";
             this.Load += new System.EventHandler(this.SNMPTrapSenderForm_Load);
             this.tblMaster.ResumeLayout(false);
+            this.tblMaster.PerformLayout();
             this.grpMessage.ResumeLayout(false);
             this.grpMessage.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -267,6 +281,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtResource;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtOutput;
     }
 }
 

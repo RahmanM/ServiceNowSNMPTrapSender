@@ -20,3 +20,7 @@ C:\Users\Rahman\Downloads\SNMPTrapSender-master\SNMPTrapSender-master\obj\Debug\
 C:\Users\Rahman\Downloads\SNMPTrapSender-master\SNMPTrapSender-master\obj\Debug\SNMP.Trap.Sender.exe
 C:\Users\Rahman\Downloads\SNMPTrapSender-master\SNMPTrapSender-master\obj\Debug\SNMP.Trap.Sender.pdb
 C:\Users\Rahman\Downloads\SNMPTrapSender-master\SNMPTrapSender-master\obj\Debug\SNMP.Trap.Sender.csprojAssemblyReference.cache
+C:\Users\Rahman\Downloads\SNMPTrapSender-master\SNMPTrapSender-master\bin\Debug\SNMP.Trap.Sender.exe.manifest
+C:\Users\Rahman\Downloads\SNMPTrapSender-master\SNMPTrapSender-master\bin\Debug\SNMP.Trap.Sender.application
+C:\Users\Rahman\Downloads\SNMPTrapSender-master\SNMPTrapSender-master\obj\Debug\SNMP.Trap.Sender.exe.manifest
+C:\Users\Rahman\Downloads\SNMPTrapSender-master\SNMPTrapSender-master\obj\Debug\SNMP.Trap.Sender.application

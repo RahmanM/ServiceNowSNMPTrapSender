@@ -36,6 +36,8 @@ namespace SNMP.Trap.Sender
                 if (string.IsNullOrEmpty(txtResource.Text)) throw new Exception("Please provide a resource name e.g. Customers database etc");
 
                 SendTrap(txtMessage.Text, txtHost.Text, Int32.Parse(txtPort.Text));
+
+                txtOutput.Text += "Trap: " + _key + " is sent!" + Environment.NewLine;
             }
             catch (Exception ex)
             {
